@@ -59,6 +59,8 @@ original voltage-only script.
 It **is** the location server: it binds the port itself, so nothing else needs to
 be running. Every datagram is decoded and painted live.
 
+![gps_dashboard.py](gps_dashboard.webp)
+
 ```sh
 python3 gps_dashboard.py                      # UDP on 0.0.0.0:5000
 python3 gps_dashboard.py --port 5005
@@ -223,6 +225,8 @@ python3 mqtt_power.py
 
 `loc_test_server.py` prints and decodes each report:
 
+![loc_test_server.py](loc_test_server.webp)
+
 ```
 [10:35:37] 59 bytes from 127.0.0.1:43556
   RAW : >RPV56137+3739438-1220384603012612;ID=0000;VOLT=12.3;*65<
@@ -243,6 +247,8 @@ python3 mqtt_power.py
 ```
 
 ### Watching the MQTT side
+
+![exemple_power.py](exemple_power.webp)
 
 ```sh
 mosquitto -p 1883 -v                                            # a broker
